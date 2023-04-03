@@ -83,10 +83,18 @@
 					<configuration>
 						<forkCount>3</forkCount>
 						<reuseForks>true</reuseForks>
-						<argLine>-Xmx3072m -XX:MaxPermSize=256m</argLine>
+						<argLine>-Xmx3024m -XX:MaxPermSize=256m</argLine>
 						<suiteXmlFiles>
-							<suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
+							<suiteXmlFile>qtest\testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
 					</configuration>
 				</plugin>
 			</plugins>
